@@ -37,7 +37,7 @@ module.exports = {
         '4xl':['2.25rem','2.875rem'],
         '5xl':['3rem','3.625rem'],
         '22' : ['1.375rem', '2rem'],
-        '28': ['1.875', '2.375rem'],
+        '28': ['1.875rem', '2.375rem'],
       },
       colors: {
         primary:'#022D62',
@@ -45,7 +45,8 @@ module.exports = {
         gray_Slate:'#64748B',
         gray_Gull:'#94A3B8',
         black_Mirage:'#1E293B',
-        geyser:'#CBD5E1'
+        geyser:'#CBD5E1',
+        light_Gray:'#F5F5F7'
       },
     },
   },
