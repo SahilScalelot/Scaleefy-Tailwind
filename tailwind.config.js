@@ -39,7 +39,7 @@ module.exports = {
         '28': ['1.875rem', '2.375rem'],
       },
       colors: {
-        primary:'#022D62',
+        primary:'#022D62',        
         secondary: '#0F172A',
         gray_slate:'#64748B',
         gray_gull:'#94A3B8',
