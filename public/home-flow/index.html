@@ -13,14 +13,85 @@
 <body>
   <div class="w-full relative">
     <!-- header -->
-    <header>
-      <div class="w-full">
-        <div class="container">
-           
+    <header class="w-full bg-white">
+      <div class="w-full bg-white drop-shadow-one py-5">
+        <div class="container flex items-center">
+           <div class="logo w-16 lg:w-20">
+              <img src="../assest/images/svg/Sellify.svg" class="w-full" alt="logoSellify">
+           </div>
+           <div class="searchbar w-full max-w-md ml-8 mr-2">
+            <label for="Search" class="w-full">
+              <div class="py-3 px-4 rounded-lg bg-l_white">
+                <input type="search" name="search" id="search" placeholder="Search for Gold Jewellery, Diamond Jewellery and more…"/>
+              </div>
+            </label>
+           </div>
+           <div class="icon_g flex items-center space-x-6 ml-auto">
+            <a href="javascript:void(0)" class="hicon">
+              <span class="icon-notification"></span>
+            </a>
+            <a href="javascript:void(0)" class="hicon">
+              <span class="icon-cart"></span>
+            </a>
+            <a href="javascript:void(0)" class="hicon">
+              <span class="icon-heart"></span>
+            </a>
+            <a href="javascript:void(0)" class="inline-block w-12 h-12 rounded-full overflow-hidden">
+              <img src="../assest/images/userProfile.png" class="object-cover" alt="Profile"/>
+            </a>
+           </div>
+           <div class="selaction_g flex items-center ml-6 space-x-2">
+              <div class="currency">
+                <select name="currency" class="outline-none cursor-pointer font-primary" id="currency">
+                  <option value="USD">USD</option>
+                  <option value="USD">INR</option>
+                  <option value="USD">CND</option>
+                </select>
+              </div>
+              <div class="languages">
+                <select name="languages" class="outline-none cursor-pointer font-primary" id="languages">
+                  <option value="USD">Eng</option>
+                  <option value="USD">Hin</option>
+                  <option value="USD">Fra</option>
+                </select>
+              </div>
+           </div>
         </div>
       </div>
-      <div class="w-full">
+      <div class="w-full bg-l_white my-3">
         <nav class="container"> 
+          <div class="navmenu">
+            <div class="navlist py-4">
+              <a href="javascript:void(0)" class="navlink font-primary flex items-center">All Jewellery <i class="icon-downArrow ml-3 font-primary text-lg lg:text-xl mt-1"></i></a>
+              <div class="droplist bg-white drop-shadow-tow w-max rounded-lg py-4 px-6">
+                <div class="drtoptitel">
+                  <span class="block text-xl text-secondary font-bold">Jewellery Collections</span>
+                </div>
+                <div class="droplink -mx-2 flex pt-3">
+                  <div class="w-1/3 px-2 space-y-2">
+                    <a href="javascript:void(0)" class="block">Bangles</a>
+                    <a href="javascript:void(0)" class="block">Bracelets</a>
+                    <a href="javascript:void(0)" class="block">Earrings</a>
+                    <a href="javascript:void(0)" class="block">Gold Chains</a>
+                    <a href="javascript:void(0)" class="block">Kadas</a>
+                  </div>
+                  <div class="w-1/3 px-2 space-y-2">
+                    <a href="javascript:void(0)" class="block">Mangalsutros</a>
+                    <a href="javascript:void(0)" class="block">Necklaces</a>
+                    <a href="javascript:void(0)" class="block">Nose Pins</a>
+                    <a href="javascript:void(0)" class="block">Nose Rings</a>
+                    <a href="javascript:void(0)" class="block">Nose Screws</a>
+                  </div>
+                  <div class="w-1/3 px-2 space-y-2">
+                    <a href="javascript:void(0)" class="block">Mangalsutros</a>
+                    <a href="javascript:void(0)" class="block">Necklaces</a>
+                    <a href="javascript:void(0)" class="block">Nose Pins</a>
+                    <a href="javascript:void(0)" class="block">Nose Rings</a>
+                    <a href="javascript:void(0)" class="block">Nose Screws</a>
+                  </div>
+                </div>
+            </div>
+          </div>
         </nav>
       </div>
     </header>

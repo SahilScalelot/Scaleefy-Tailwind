@@ -1,4 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
-.container{@apply max-w-screen-xl mx-auto}
+
+body{@apply font-qksans;}
+.container{@apply max-w-screen-xl mx-auto;}
+
+/* header  */
+.icon_g .hicon{@apply inline-block w-12 h-12 p-2.5 text-center text-primary text-xl xl:text-2xl bg-l_white rounded-lg font-bold;}
+.searchbar input{@apply w-full bg-transparent text-sm outline-none overflow-hidden text-ellipsis;}
+.font-primary{@apply text-sm lg:text-base text-black_mirage font-bold;}
 @tailwind utilities;

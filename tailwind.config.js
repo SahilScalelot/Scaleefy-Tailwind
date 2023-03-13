@@ -23,8 +23,7 @@ module.exports = {
       },
     },
     fontFamily: {
-      'ptsans': ['PT Sans', 'sans-serif'],
-      'noto': ['Noto Sans', 'sans-serif'],
+      'qksans': ['Quicksand', 'sans-serif']
     },
     extend: {
       fontSize: {
@@ -42,12 +41,17 @@ module.exports = {
       colors: {
         primary:'#022D62',
         secondary: '#0F172A',
-        gray_Slate:'#64748B',
-        gray_Gull:'#94A3B8',
-        black_Mirage:'#1E293B',
+        gray_slate:'#64748B',
+        gray_gull:'#94A3B8',
+        black_mirage:'#1E293B',
         geyser:'#CBD5E1',
-        light_Gray:'#F5F5F7'
+        light_gray:'#F5F5F7',
+        l_white:'#F8FAFC'
       },
+      dropShadow:{
+        'one':'0px 0px 10px rgba(132, 132, 132, 0.15)',
+        'tow':'0px 5px 13px rgba(203, 213, 225, 0.59)',
+      }
     },
   },
   plugins: [],
