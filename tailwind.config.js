@@ -46,7 +46,7 @@ module.exports = {
         black_mirage:'#1E293B',
         geyser:'#CBD5E1',
         light_gray:'#F5F5F7',
-        l_white:'#F8FAFC'
+        light_white:'#F8FAFC'
       },
       dropShadow:{
         'one':'0px 0px 10px rgba(132, 132, 132, 0.15)',
