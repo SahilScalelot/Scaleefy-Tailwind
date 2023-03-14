@@ -4,10 +4,41 @@
 @tailwind components;
 
 body{@apply font-qksans;}
+/* container */
 .container{@apply max-w-screen-xl mx-auto;}
-
+/* ANim */
+.anim {@apply transition-all duration-300;}
+/* titel_tags */
+/* 48px  */
+h2{@apply text-3xl lg:text-4xl xl:text-5xl;}
+/* 36px */
+h3{@apply text-2xl lg:text-3xl xl:text-4xl;}
 /* header  */
-.icon_g .hicon{@apply inline-block w-12 h-12 p-2.5 text-center text-primary text-xl xl:text-2xl bg-light_white rounded-lg font-bold;}
-.searchbar input{@apply w-full bg-transparent text-sm outline-none overflow-hidden text-ellipsis;}
-.font-primary{@apply text-sm lg:text-base text-black_mirage font-bold;}
+.icon_g .hicon{@apply lg:w-12 lg:h-12 lg:p-2.5 text-center text-primary text-xl md:text-2xl lg:bg-light_white rounded-lg font-bold;}
+.searchbar input{@apply h-full md:h-auto w-full bg-transparent text-sm outline-none overflow-hidden text-ellipsis;}
+.font-primary{@apply text-sm md:text-base text-black_mirage font-bold;}
+.droplink a{@apply text-sm xl:text-base font-bold text-gray_slate hover:text-primary lg:min-w-[160px] whitespace-nowrap;}
+.droplist{@apply bg-white z-20 lg:drop-shadow-tow lg:w-max rounded-lg py-4 px-6 absolute top-full translate-y-5 invisible opacity-0 group-hover:visible group-hover:translate-y-2 group-hover:opacity-100 anim;}
+.searchbar{@apply w-full absolute inset-0 h-full invisible opacity-0 md:opacity-100 md:visible md:h-auto md:relative md:max-w-sm lg:max-w-md md:ml-8 md:mr-2;}
+.searchbar.active{@apply visible opacity-100;}
+.navigationholder{@apply w-full bg-light_white lg:my-3 absolute left-0 -translate-x-full lg:translate-x-0 max-w-xs h-[calc(100vh-76px)] overflow-y-auto overflow-y-unset lg:h-auto lg:max-w-full lg:relative anim;}
+.navigationholder.active{@apply translate-x-0;}
+.profie_details{@apply  drop-shadow-one px-3 sm:px-6 py-2 sm:py-4 rounded-xl bg-white space-y-1 absolute top-full right-4 translate-y-5 invisible opacity-0 z-50 group-hover:visible group-hover:opacity-100 group-hover:translate-y-3 anim;}
+@media (min-width: 1024px){
+  .overflow-y-unset{
+   overflow-y: unset !important;
+  }
+}
+@media (max-width: 1023px){
+  .droplist{@apply group-hover:relative;}
+}
+
+.card-btn-primary{@apply w-full sm:w-1/2 py-2 rounded-md font-bold border border-primary bg-primary text-light_white sm:mx-2 hover:opacity-70 anim;}
+.card-btn-secondary{@apply w-full sm:w-1/2 py-2 rounded-md font-bold border border-primary text-primary hover:opacity-70 anim;}
+/* slider */
+.dot.active{@apply bg-primary;}
 @tailwind utilities;
+
+/* Testimonials */
+.review-card{@apply p-5 lg:p-6 xl:p-8 bg-white rounded-2xl text-center space-y-5 anim;}
+.review-card.active{@apply drop-shadow-three;}

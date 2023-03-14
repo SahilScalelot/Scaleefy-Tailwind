@@ -51,6 +51,7 @@ module.exports = {
       dropShadow:{
         'one':'0px 0px 10px rgba(132, 132, 132, 0.15)',
         'tow':'0px 5px 13px rgba(203, 213, 225, 0.59)',
+        'three':'0px 14px 20px rgba(148, 163, 184, 0.25)',
       }
     },
   },
