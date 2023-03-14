@@ -25,6 +25,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-toggle:before {
+  content: "\e916";
+}
+.icon-search:before {
+  content: "\e917";
+}
 .icon-upArrow:before {
   content: "\e900";
 }
@@ -115,13 +121,13 @@
   content: "\e915";
 }
 .icon-freeShipping:before {
-  content: "\e916";
+  content: "\e918";
 }
 .icon-easy-returns:before {
-  content: "\e917";
+  content: "\e92f";
 }
 .icon-dimnond:before {
-  content: "\e918";
+  content: "\e930";
 }
 .icon-minus:before {
   content: "\e919";
