@@ -234,7 +234,6 @@
         </nav>
       </div>
     </header>
-
     <!-- banner  -->
     <div class="w-full relative z-10">
       <div class="slider relative w-full h-[300px] md:h-[450px] lg:h-[calc(100vh-180px)] overflow-hidden">
@@ -264,7 +263,6 @@
         <span class="dot w-2 h-2 rounded-full bg-light_gray" data-slide="3"></span>
       </div>
     </div>
-
     <!-- Jewellery Collection & Featured Collection -->
     <div class="w-full">
       <div class="container">
@@ -583,7 +581,6 @@
         </div>
       </div>
     </div>
-
     <!-- Family Jewellery Collection -->
     <div class="w-full px-5 py-8 md:py-10 xl:py-12">
       <div class="w-full rounded-xl overflow-hidden relative">
@@ -597,7 +594,6 @@
         </div>
       </div>
     </div>
-
     <!-- New Arrivals Jewellery -->
     <div class="w-full py-8 md:py-10 xl:py-12">
       <div class="container flex flex-wrap">
@@ -623,7 +619,6 @@
         </div>
       </div>
     </div>
-
     <!-- Testimonials -->
     <div class="flex flex-wrap py-8 md:py-10 xl:py-12">
       <div class="container flex flex-wrap">
@@ -777,7 +772,6 @@
 
       </div>
     </div>
-
     <!-- Summer Collection & Make It Memorable -->
     <div class="flex flex-wrap py-8 md:py-10 xl:py-12">
       <div class="container">
@@ -805,7 +799,6 @@
         </div>
       </div>
     </div>
-
     <!-- Subscribe our news letters to reach us -->
     <div class="flex flex-wrap py-8 md:py-10 xl:py-12">
       <div class="container relative px-6 py-16 bg-light_white rounded-2xl overflow-hidden text-center">      
@@ -827,7 +820,6 @@
         </span>
       </div>
     </div>
-
     <!-- footer -->
     <div class="bg-primary py-10 xl:py-12">
       <div class="container">
@@ -904,22 +896,24 @@
       </div>
     </div>
   </div>
-
   <script>
+    // Class Toggle 
     function toggleActive(Id, db) {
       var element = document.querySelector(Id);
       element.classList.toggle(db);
     }
+    // class remove 
     function removeActive(Id, db) {
       var element = document.querySelector(Id);
       element.classList.remove(db);
     }
+    // class Add
     function addActive(Id, db) {
       var element = document.querySelector(Id);
       element.classList.add(db);
     }
 
-    //Home slider
+  //Home slider
     function Slider() {
     const carouselSlides = document.querySelectorAll('.slide');
     const btnPrev = document.querySelector('.prev');

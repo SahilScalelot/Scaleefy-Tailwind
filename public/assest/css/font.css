@@ -25,6 +25,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-right:before {
+  content: "\e931";
+}
 .icon-toggle:before {
   content: "\e916";
 }
@@ -108,7 +111,7 @@
 .icon-orderComfirmed:before {
   content: "\e911";
 }
-.icon-eelete:before {
+.icon-delete:before {
   content: "\e912";
 }
 .icon-edit:before {
@@ -119,15 +122,6 @@
 }
 .icon-vision:before {
   content: "\e915";
-}
-.icon-freeShipping:before {
-  content: "\e918";
-}
-.icon-easy-returns:before {
-  content: "\e92f";
-}
-.icon-dimnond:before {
-  content: "\e930";
 }
 .icon-minus:before {
   content: "\e919";
