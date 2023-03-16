@@ -1365,10 +1365,6 @@ h4{
   visibility: visible;
 }
 
-.invisible{
-  visibility: hidden;
-}
-
 .static{
   position: static;
 }
@@ -1823,10 +1819,6 @@ h4{
 
 .max-w-xl{
   max-width: 36rem;
-}
-
-.max-w-\[200px\]{
-  max-width: 200px;
 }
 
 .-translate-y-1\/2{
