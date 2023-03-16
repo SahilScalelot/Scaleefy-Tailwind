@@ -13,6 +13,8 @@ body{@apply font-qksans;}
 h2{@apply text-3xl lg:text-4xl xl:text-5xl;}
 /* 36px */
 h3{@apply text-2xl lg:text-3xl xl:text-4xl;}
+/* 28px */
+h4{@apply text-22 lg:text-2xl xl:text-28;}
 /* header  */
 .icon_g .hicon{@apply lg:w-12 lg:h-12 lg:p-2.5 text-center text-primary text-xl md:text-2xl lg:bg-light_white rounded-lg font-bold;}
 .searchbar input{@apply h-full md:h-auto w-full bg-transparent text-sm outline-none overflow-hidden text-ellipsis;}
@@ -37,8 +39,42 @@ h3{@apply text-2xl lg:text-3xl xl:text-4xl;}
 .card-btn-secondary{@apply w-full sm:w-1/2 py-2 rounded-md font-bold border border-primary text-primary hover:opacity-70 anim;}
 /* slider */
 .dot.active{@apply bg-primary;}
-@tailwind utilities;
+
 
 /* Testimonials */
 .review-card{@apply p-5 lg:p-6 xl:p-8 bg-white rounded-2xl text-center space-y-5 anim;}
 .review-card.active{@apply drop-shadow-three;}
+
+/* card */
+.quantity_count button{@apply h-7 w-7 leading-7 font-primary text-xl text-primary bg-primary/10 rounded-full transition hover:opacity-75;}
+.quantity_count span input::-webkit-outer-spin-button, .quantity_count span input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+/* step bar  */
+.stapholder.active .stapbox{@apply border-primary bg-primary;}
+.stapholder.active .stapbox span{@apply opacity-100;}
+.stapholder.running .processline, .stapholder.active .processline{@apply bg-primary;}
+.stapholder.running .stapbox{@apply border-primary;}
+
+/* order_flow  */
+.ordernxtprw_btn{@apply text-sm md:text-base sm:max-w-[220px] lg:max-w-[250px] text-center py-3 px-3 lg:py-4;}
+
+/* Billing Address */
+.cardinput {@apply block w-full;}
+.cardinput input, .cardinput textarea{@apply outline-none w-full bg-light_gray rounded-lg p-3 font-semibold text-primary md:p-4 text-sm lg:text-base lg:p-5;}
+.checkbox input + span{@apply inline-block w-full h-full absolute inset-0 pointer-events-none text-[8px] leading-4 text-center text-white;}
+.checkbox input:checked + span{@apply bg-primary;}
+
+/* redio checked  */
+.paydelivery{@apply relative mr-2 flex items-start;}
+.paydelivery input{@apply absolute w-5 h-5 opacity-0 z-10 top-1 cursor-pointer;}
+.paydelivery .radiobox{@apply mx-auto w-5 h-5 block rounded-full border-[5px] mt-1 border-light_gray bg-white relative;}
+.paydelivery .paytitel{@apply block text-lg lg:text-xl font-bold text-gray_slate;}
+.paydelivery .paysubtitel{@apply block text-gray_slate font-semibold md:font-normal text-sm lg:text-base;}
+.paydelivery input:checked + .radiobox{@apply border-primary;}
+.paydelivery input:checked ~ div .paytitel{@apply text-primary;}
+
+
+
+@tailwind utilities;
