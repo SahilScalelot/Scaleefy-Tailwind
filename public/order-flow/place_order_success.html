@@ -228,5 +228,78 @@
         </div>
       </div>
     </div>
-  </body>
+
+    <div id="cart_menu" class="cartPopUp fixed inset-0 z-50 hidden mt-auto items-center">
+      <span class="backDrop fixed inset-0 bg-black/40 opacity-0 -z-50" onclick="removeClass('cart_menu','show')"></span>
+      <div class="w-full px-4">
+        <div class="relative cart_menu flex flex-col justify-between max-w-[507px] w-full bg-white rounded-xl drop-shadow-tow opacity-0 p-4 sm:p-6 md:p-8 mx-auto anim">
+          <h3 class="block text-center font-bold">Write Review</h3>
+          <div class="w-full">
+            <span class="block text-secondary font-semibold">Rate Product</span>
+            <div class="flex flex-wrap SM:flex-nowrap items-center pt-2"> 
+              <div class="rating_start flex justify-center items-center space-x-4 pt-1">
+                <span class="inline-block">
+                  <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 0L14.6942 8.2918H23.4127L16.3593 13.4164L19.0534 21.7082L12 16.5836L4.94658 21.7082L7.64074 13.4164L0.587322 8.2918H9.30583L12 0Z" fill="#022D62"/>
+                  </svg>                  
+                </span>
+                <span class="inline-block">
+                  <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 0L14.6942 8.2918H23.4127L16.3593 13.4164L19.0534 21.7082L12 16.5836L4.94658 21.7082L7.64074 13.4164L0.587322 8.2918H9.30583L12 0Z" fill="#CBD5E1"/>
+                  </svg>                  
+                </span>
+                <span class="inline-block">
+                  <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 0L14.6942 8.2918H23.4127L16.3593 13.4164L19.0534 21.7082L12 16.5836L4.94658 21.7082L7.64074 13.4164L0.587322 8.2918H9.30583L12 0Z" fill="#CBD5E1"/>
+                  </svg>                  
+                </span>
+                <span class="inline-block">
+                  <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 0L14.6942 8.2918H23.4127L16.3593 13.4164L19.0534 21.7082L12 16.5836L4.94658 21.7082L7.64074 13.4164L0.587322 8.2918H9.30583L12 0Z" fill="#CBD5E1"/>
+                  </svg>                  
+                </span>
+                <span class="inline-block">
+                  <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 0L14.6942 8.2918H23.4127L16.3593 13.4164L19.0534 21.7082L12 16.5836L4.94658 21.7082L7.64074 13.4164L0.587322 8.2918H9.30583L12 0Z" fill="#CBD5E1"/>
+                  </svg>                  
+                </span>
+              </div>
+              <span class="text-sm text-gray_slate sm:pl-6 pt-1">(Choose a rating)</span>
+            </div>
+          </div>
+          <form action="" class="flex flex-wrap items-center -mx-2 pt-4 md:pt-6">
+            <div class="w-full p-2">
+              <label for="review_massage" class="cardinput">
+                <textarea name="review_massage" placeholder="Wright a Massage" id="review_massage" cols="30" rows="4" class="text-xs md:text-sm"></textarea>
+              </label>
+            </div>
+            <div class="w-full sm:w-1/2 p-2">
+              <label class="block cursor-pointer bg-light_gray font-semibold text-primary text-sm lg:text-base outline-2 outline-dashed outline-primary/10 rounded-lg md:p-4 p-3 lg:p-5">
+                <input type="file" name="upload_img" id="upload_img" class="placeholder-opacity-0 hidden" />
+                <div class="flex items-center">
+                  <span class="icon-uploadImg mr-2"></span>
+                  <span>Upload Image</span>
+                </div>
+              </label>
+            </div>
+            <div class="w-full sm:w-1/2 p-2">
+              <label class="block cursor-pointer bg-light_gray font-semibold text-primary text-sm lg:text-base outline-2 outline-dashed outline-primary/10 rounded-lg md:p-4 p-3 lg:p-5">
+                <input type="file" name="upload_img" id="upload_img" class="placeholder-opacity-0 hidden" />
+                <div class="flex items-center">
+                  <span class="icon-uploadVideo mr-2"></span>
+                  <span>Upload Video</span>
+                </div>
+              </label>
+            </div>
+            <div class="w-full flex text-xs sm:text-base font-medium space-x-2 pt-6 px-2">
+              <button type="reset" class="py-4 card-btn-secondary">Cancle</button>
+              <button type="submit" class="py-4 card-btn-primary" onclick="removeClass('cart_menu','show')">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../assest/js/script.js"></script>
+</body>
 </html>
