@@ -60,10 +60,11 @@ h4{@apply text-22 lg:text-2xl xl:text-28;}
     margin: 0;
 }
 /* FAQ */
+.accord_btn {@apply relative flex items-center justify-between w-full text-black_mirage text-left text-22 md:text-2xl font-bold border-0 outline-none bg-transparent hover:cursor-pointer hover:text-gray_slate focus:cursor-pointer focus:text-gray_slate py-4 px-9;}
 .accordion button[aria-expanded='true'] span.icon-downArrow2{@apply rotate-180;}
+.accordion button[aria-expanded='true'] {@apply bg-light_white;}
 .accordion button[aria-expanded='true'] {@apply text-primary;}
-.accordion button[aria-expanded='true'] ~ .accordion-content { @apply scale-y-100 h-full max-h-[650px] transition-all duration-200 ease-linear;}
-.accord_btn {@apply relative flex items-center justify-between w-full text-black_mirage text-left text-22 md:text-2xl font-bold border-0 outline-none bg-transparent hover:cursor-pointer hover:text-gray_slate focus:cursor-pointer focus:text-gray_slate py-6 px-9;}
+.accordion button[aria-expanded='true'] ~ .accordion-content { @apply block h-full max-h-[650px] bg-light_white transition-all duration-200 ease-linear;}
 
 /* step bar  */
 .stapholder.active .stapbox{@apply border-primary bg-primary;}
@@ -89,6 +90,12 @@ h4{@apply text-22 lg:text-2xl xl:text-28;}
 .paydelivery input:checked + .radiobox{@apply border-primary;}
 .paydelivery input:checked ~ div .paytitel{@apply text-primary;}
 
+/* popup */
+.cartPopUp .cart_menu {@apply translate-x-full opacity-0 transition-all duration-300;}
+.cartPopUp .backDrop {@apply opacity-0 -z-50;}
 
+.cartPopUp.show {@apply z-40 flex;}
+.cartPopUp.show .cart_menu {@apply translate-x-0 opacity-100;}
+.cartPopUp.show .backDrop {@apply  opacity-100 z-0;}
 
 @tailwind utilities;
