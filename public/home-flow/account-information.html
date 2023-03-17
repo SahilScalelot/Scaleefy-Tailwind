@@ -235,65 +235,70 @@
       </div>
     </header>
 
-    <div class="container">
+    <div class="flex flex-wrap py-8 md:py-10 xl:py-12">
+      <div class="container">
 
-      <!-- page heading -->
-      <div class="flex flex-wrap pt-8 md:pt-10 xl:pt-12">
-        <div class="text-lg sm:text-xl font-bold">
-          <span class="text-gray_gull">Home ></span><span class="text-gray_gull"> My Account ></span><span> About Us</span>
+        <!-- page heading -->
+        <div class="h-menu-flow">
+          <span>Home</span><span>></span><span> My Account</span><span>></span><span class="active"> Account Information</span>
         </div>
-      </div>
-        
-        <!-- account information -->
-      <div class="w-full py-8 md:py-10 xl:py-12">
-        <h2 class="capitalize font-bold mb-6">account information</h2>
-        <div class="flex flex-wrap items-start justify-between -mt-5 -mx-3">
-          <div class="px-3 pt-5">
-            <div class="flex items-center">
-              <span class="text-22 md:text-2xl xl:text-28 font-bold text-black_mirage capitalize">personal info</span>
-            </div>
-            <div class="flex items-center justify-start pt-4 md:pt-6">
-              <div class="flex flex-col items-start space-y-2">
-                <span class="text-primary/90 font-bold capitalize">full name :</span>
-                <span class="text-primary/90 font-bold capitalize">DOB :</span>
+          
+          <!-- account information -->
+        <div class="w-full py-8 md:py-10 xl:py-12">
+          <h2 class="capitalize font-bold mb-6">account information</h2>
+          <div class="flex flex-wrap items-start justify-between -mt-5 -mx-3">
+            <div class="w-full lg:w-8/12 px-3 pt-5">
+              <div class="flex items-center">
+                <a href="personal-information-edit.html" class="text-22 md:text-2xl xl:text-28 font-bold text-black_mirage">Personal & contact Details</a>
+                <div class="flex items-center font-bold text-primary cursor-pointer">  
+                  <span class="icon-edit px-1"></span>
+                  <span>Edit</span>
+                </div>
               </div>
-              <div class="flex flex-col items-start space-y-2">
-                <span class="text-gray_gull font-bold capitalize">john deo</span>
-                <span class="text-gray_gull font-bold capitalize">20/07/2023</span>
+              <div class="w-full flex flex-wrap items-center justify-between">
+                <div class="flex items-center justify-start pt-4 md:pt-6">
+                  <div class="flex flex-col items-start space-y-2">
+                    <span class="text-primary/90 font-bold capitalize">full name :</span>
+                    <span class="text-primary/90 font-bold capitalize">DOB :</span>
+                  </div>
+                  <div class="flex flex-col items-start space-y-2">
+                    <span class="text-gray_gull font-bold capitalize">john deo</span>
+                    <span class="text-gray_gull font-bold capitalize">20/07/2023</span>
+                  </div>
+                </div>
+                <div class="flex items-center justify-start pt-4 md:pt-6">
+                  <div class="flex flex-col items-start space-y-2">
+                    <span class="text-primary/90 font-bold capitalize">phone number :</span>
+                    <span class="text-primary/90 font-bold capitalize">email :</span>
+                  </div>
+                  <div class="flex flex-col items-start space-y-2">
+                    <span class="text-gray_gull font-bold capitalize">+91 9865325789</span>
+                    <span class="text-gray_gull font-bold capitalize">jhondeo@gmail.com</span>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="px-3 pt-5">
-            <div class="flex items-center">
-              <span class="text-22 md:text-2xl xl:text-28 font-bold text-black_mirage capitalize">contact details</span>
-            </div>
-            <div class="flex items-center justify-start pt-4 md:pt-6">
-              <div class="flex flex-col items-start space-y-2">
-                <span class="text-primary/90 font-bold capitalize">phone number :</span>
-                <span class="text-primary/90 font-bold capitalize">email :</span>
+            <div class="px-3 pt-5">
+              <div class="flex items-center">
+                <a href="address-account-information-edit.html" class="text-22 md:text-2xl xl:text-28 font-bold text-black_mirage capitalize">address book</a>
+                <div class="flex items-center font-bold text-primary cursor-pointer">  
+                  <span class="icon-edit px-1"></span>
+                  <span>Edit</span>
+                </div>
               </div>
-              <div class="flex flex-col items-start space-y-2">
-                <span class="text-gray_gull font-bold capitalize">+91 9865325789</span>
-                <span class="text-gray_gull font-bold capitalize">jhondeo@gmail.com</span>
-              </div>
-            </div>
-          </div>
-          <div class="px-3 pt-5">
-            <div class="flex items-center">
-              <span class="text-22 md:text-2xl xl:text-28 font-bold text-black_mirage capitalize">address book</span>
-            </div>
-            <div class="pt-4 md:pt-6">
-              <div class="flex flex-col items-start space-y-2">
-                <span class="text-primary/90 font-bold capitalize">shiiping address :</span>
-                <span class="text-gray_gull font-bold capitalize">jhon deo</span>
-                <span class="text-gray_gull font-bold capitalize">no-01, first floor, beside empire-state gate-1</span>
-                <span class="text-gray_gull font-bold capitalize">taxas,U.S.A 987654</span>
-              </div>
-              <div class="flex flex-col items-start space-y-2 pt-6">
-                <span class="text-primary/90 font-bold capitalize">billing address :</span>
-                <span class="text-gray_gull font-bold capitalize">jhon deo</span>
-                <span class="text-gray_gull font-bold capitalize">no-01, first floor, beside empire-state gate-1</span>
-                <span class="text-gray_gull font-bold capitalize">taxas,U.S.A 987654</span>
+              <div class="pt-4 md:pt-6">
+                <div class="flex flex-col items-start space-y-2">
+                  <span class="text-primary/90 font-bold capitalize">shiiping address :</span>
+                  <span class="text-gray_gull font-bold capitalize">jhon deo</span>
+                  <span class="text-gray_gull font-bold capitalize">no-01, first floor, beside empire-state gate-1</span>
+                  <span class="text-gray_gull font-bold capitalize">taxas,U.S.A 987654</span>
+                </div>
+                <div class="flex flex-col items-start space-y-2 pt-6">
+                  <span class="text-primary/90 font-bold capitalize">billing address :</span>
+                  <span class="text-gray_gull font-bold capitalize">jhon deo</span>
+                  <span class="text-gray_gull font-bold capitalize">no-01, first floor, beside empire-state gate-1</span>
+                  <span class="text-gray_gull font-bold capitalize">taxas,U.S.A 987654</span>
+                </div>
               </div>
             </div>
           </div>

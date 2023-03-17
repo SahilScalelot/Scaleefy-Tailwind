@@ -235,86 +235,86 @@
       </div>
     </header>
     
-    <div class="container">
+    <div class="flex flex-wrap py-8 md:py-10 xl:py-12">
+      <div class="container">
 
-      <!-- page heading -->
-      <div class="flex flex-wrap pt-8 md:pt-10 xl:pt-12">
-        <div class="text-lg sm:text-xl font-bold">
-          <span class="text-gray_gull">Home ></span><span class="text-black_mirage"> Contact Us</span>
+        <!-- page heading -->
+        <div class="h-menu-flow">
+          <span>Home</span><span>></span><span class="active"> Contact Us</span>
         </div>
-      </div>  
-      
-      <!-- feedback section -->
-      <div class="flex flex-wrap pt-8 md:pt-10 xl:pt-12 pb-12">
-        <h2 class="w-full capitalize text-black_mirage font-bold">Send Us Your Questions & Feedback!</h2>
-        <div class="w-full flex-wrap flex items-start justify-between -mx-3">
-          <div class="w-full lg:w-8/12 p-3">
-            <form action="" method="post" class="w-full">
-              <div class="flex flex-wrap -mx-2">
-                <div class="w-full md:w-1/2 p-2">
-                  <label for="name" class="cardinput">
-                    <input type="text" name="name" placeholder="Name" id="name"/>
-                  </label>
+        
+        <!-- feedback section -->
+        <div class="flex flex-wrap pt-8 md:pt-10 xl:pt-12 pb-12">
+          <h2 class="w-full capitalize text-black_mirage font-bold">Send Us Your Questions & Feedback!</h2>
+          <div class="w-full flex-wrap flex items-start justify-between  pt-8 md:pt-10 xl:pt-12 -mx-3">
+            <div class="w-full lg:w-8/12 p-3">
+              <form action="" method="post" class="w-full">
+                <div class="flex flex-wrap -mx-2">
+                  <div class="w-full md:w-1/2 p-2">
+                    <label for="name" class="cardinput">
+                      <input type="text" name="name" placeholder="Name" id="name"/>
+                    </label>
+                  </div>
+                  <div class="w-full md:w-1/2 p-2">
+                    <label for="email_address" class="cardinput">
+                      <input type="text" name="email_address" placeholder="Email Address" id="email_address"/>
+                    </label>
+                  </div>
+                  <div class="w-full p-2">
+                    <label for="massage" class="cardinput">
+                      <textarea name="massage" placeholder="Massage" id="massage" cols="30" rows="5"></textarea>
+                    </label>
+                  </div>
+                  <div class="w-full flex flex-wrap mt-8">
+                    <a href="shipping_address.html" type="button" class="card-btn-primary ordernxtprw_btn mr-auto ml-3 order-1 sm:order-2">Send Massage</a>
+                  </div>
                 </div>
-                <div class="w-full md:w-1/2 p-2">
-                  <label for="email_address" class="cardinput">
-                    <input type="text" name="email_address" placeholder="Email Address" id="email_address"/>
-                  </label>
+              </form>
+            </div>
+            <div class="w-full lg:w-auto p-3">
+              <span class="block text-black_mirage text-28 font-bold">Customer Services</span>
+              <div class="text-sm pt-9 pb-6 space-y-3">
+                <div>
+                  <span class="font-bold tracking-wide text-black_mirage">Mobile No.:</span>
+                  <span class="font-semibold tracking-wide text-gray_slate">+91 98765432</span>
                 </div>
-                <div class="w-full p-2">
-                  <label for="massage" class="cardinput">
-                    <textarea name="massage" placeholder="Massage" id="massage" cols="30" rows="5"></textarea>
-                  </label>
+                <div>
+                  <span class="font-bold tracking-wide text-black_mirage">Email:</span>
+                  <span class="font-semibold tracking-wide text-gray_slate">support@gmail.com</span>
                 </div>
-                <div class="w-full flex flex-wrap mt-8">
-                  <a href="shipping_address.html" type="button" class="card-btn-primary ordernxtprw_btn mr-auto ml-3 order-1 sm:order-2">Send Massage</a>
+                <div><span class="block text-black_mirage font-bold pt-6">24X7 Customer Support (All Days)</span></div>
+                <div class="flex space-x-4 pt-2">
+                  <span class="icon-Facebook text-lg text-gray_slate"></span>
+                  <span class="icon-Twitter text-lg text-gray_slate"></span>
+                  <span class="icon-Instagram text-lg text-gray_slate"></span>
+                  <span class="icon-Github text-lg text-gray_slate"></span>
+                  <span class="icon-LinkedIn text-lg text-gray_slate"></span>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>  
+
+        <!-- Subscribe our news letters to reach us -->
+        <div class="flex flex-wrap py-8 md:py-10 xl:py-12">
+          <div class="w-full relative px-6 py-16 bg-light_white rounded-2xl overflow-hidden text-center">      
+            <h3 class="text-black_mirage font-bold mb-10 md:mb-12">Subscribe our news letters to reach us</h3>
+            <form action="" method="post" class="relative w-full max-w-md mx-auto">
+              <div class="flex flex-wrap sm:flex-nowrap justify-center sm:justify-center items-center sm:bg-white sm:text-gray_gull sm:rounded-lg sm:px-3 sm:py-2 space-y-3 sm:space-y-0 sm:drop-shadow-tow">
+                <div class="flex items-center w-full bg-white text-gray_gull p-3 sm:p-0 rounded-lg sm:rounded-none drop-shadow-tow sm:drop-shadow-none">
+                  <span class="icon-envelope text-2xl px-3"></span>
+                  <input type="email" class="border-0 outline-none bg-transparent w-full" placeholder="Email">
+                </div>
+                <a href="javascript:void(0)" class="card-btn-primary block sm:inline-block sm:w-max px-3 text-sm">Subscribe</a>
               </div>
             </form>
+            <span class="absolute left-0 bottom-0">
+              <img src="../assest/images/subscribe-bg.png" alt="subscribe-bg"/>
+            </span>
+            <span class="absolute right-0 top-0 rotate-180">
+              <img src="../assest/images/subscribe-bg.png" alt="subscribe-bg"/>
+            </span>
           </div>
-          <div class="w-full lg:w-auto p-3">
-            <span class="block text-black_mirage text-28 font-bold">Customer Services</span>
-            <div class="text-sm pt-9 pb-6 space-y-3">
-              <div>
-                <span class="font-bold tracking-wide text-black_mirage">Mobile No.:</span>
-                <span class="font-semibold tracking-wide text-gray_slate">+91 98765432</span>
-              </div>
-              <div>
-                <span class="font-bold tracking-wide text-black_mirage">Email:</span>
-                <span class="font-semibold tracking-wide text-gray_slate">support@gmail.com</span>
-              </div>
-              <div><span class="block text-black_mirage font-bold pt-6">24X7 Customer Support (All Days)</span></div>
-              <div class="flex space-x-4 pt-2">
-                <span class="icon-Facebook text-lg text-gray_slate"></span>
-                <span class="icon-Twitter text-lg text-gray_slate"></span>
-                <span class="icon-Instagram text-lg text-gray_slate"></span>
-                <span class="icon-Github text-lg text-gray_slate"></span>
-                <span class="icon-LinkedIn text-lg text-gray_slate"></span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>  
-
-      <!-- Subscribe our news letters to reach us -->
-      <div class="flex flex-wrap py-8 md:py-10 xl:py-12">
-        <div class="w-full relative px-6 py-16 bg-light_white rounded-2xl overflow-hidden text-center">      
-          <h3 class="text-black_mirage font-bold mb-10 md:mb-12">Subscribe our news letters to reach us</h3>
-          <form action="" method="post" class="relative w-full max-w-md mx-auto">
-            <div class="flex flex-wrap sm:flex-nowrap justify-center sm:justify-center items-center sm:bg-white sm:text-gray_gull sm:rounded-lg sm:px-3 sm:py-2 space-y-3 sm:space-y-0 sm:drop-shadow-tow">
-              <div class="flex items-center w-full bg-white text-gray_gull p-3 sm:p-0 rounded-lg sm:rounded-none drop-shadow-tow sm:drop-shadow-none">
-                <span class="icon-envelope text-2xl px-3"></span>
-                <input type="email" class="border-0 outline-none bg-transparent w-full" placeholder="Email">
-              </div>
-              <a href="javascript:void(0)" class="card-btn-primary block sm:inline-block sm:w-max px-3 text-sm">Subscribe</a>
-            </div>
-          </form>
-          <span class="absolute left-0 bottom-0">
-            <img src="../assest/images/subscribe-bg.png" alt="subscribe-bg"/>
-          </span>
-          <span class="absolute right-0 top-0 rotate-180">
-            <img src="../assest/images/subscribe-bg.png" alt="subscribe-bg"/>
-          </span>
         </div>
       </div>
     </div>
