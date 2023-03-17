@@ -1,38 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Scaleefy || Cart</title>
-  <!-- Font CSS -->
-  <link rel="stylesheet" href="../assest/css/font.css"/>
-  <!-- Style CSS -->
-  <link rel="stylesheet" href="../assest/css/style.css"/>
-</head>
-<body>
-  <div class="w-full relative">
-     <!-- header -->
-     <header class="w-full bg-white relative z-20">
-      <div class="w-full relative bg-white drop-shadow-one py-5 z-10">                                                                                                                                                                                                                                                                                
-        <div class="container flex items-center relative">
-           <div class="toggle mr-3 lg:hidden" onclick="toggleActive('#navigationBar','active');">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scaleefy || Cart</title>
+    <!-- Font CSS -->
+    <link rel="stylesheet" href="../assest/css/font.css" />
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="../assest/css/style.css" />
+  </head>
+  <body>
+    <div class="w-full relative">
+      <!-- header -->
+      <header class="w-full bg-white relative z-20">
+        <div class="w-full relative bg-white drop-shadow-one py-5 z-10">
+          <div class="container flex items-center relative">
+            <div class="toggle mr-3 lg:hidden" onclick="toggleActive('#navigationBar','active');">
               <span class="icon-toggle inline-block cursor-pointer text-xl"></span>
-           </div>
-           <div class="logo w-16 lg:w-20">
+            </div>
+            <div class="logo w-16 lg:w-20">
               <a href="javascript:void(0)">
                 <img src="../assest/images/svg/Sellify.svg" class="w-full" alt="logoSellify">
               </a>
-           </div>
-           <div id="searchBar" class="searchbar">
-            <label for="Search" class="w-full">
-              <span id="cloSearch" onclick="removeActive('#searchBar','active');" class="icon-plus text-2xl rotate-45 rounded-full absolute top-1/2 -translate-y-1/2 right-3 block text-center z-20 md:hidden"></span>
-              <div class="py-3 px-4 rounded-lg bg-light_white h-full md:h-auto">
-                <input type="text" name="search" id="search" placeholder="Search for Gold Jewellery, Diamond Jewellery and more…"/>
-              </div>
-            </label>
-           </div>
-           <div class="icon_g flex items-center space-x-4 sm:space-x-6 ml-auto">
+            </div>
+            <div id="searchBar" class="searchbar">
+              <label for="Search" class="w-full">
+                <span id="cloSearch" onclick="removeActive('#searchBar','active');" class="icon-plus text-2xl rotate-45 rounded-full absolute top-1/2 -translate-y-1/2 right-3 block text-center z-20 md:hidden"></span>
+                <div class="py-3 px-4 rounded-lg bg-light_white h-full md:h-auto">
+                  <input type="text" name="search" id="search" placeholder="Search for Gold Jewellery, Diamond Jewellery and more…" />
+                </div>
+              </label>
+            </div>
+            <div class="icon_g flex items-center space-x-4 sm:space-x-6 ml-auto">
               <a href="javascript:void(0)" onclick="toggleActive('#searchBar','active');" class="hicon inline-block md:hidden">
                 <span class="icon-search"></span>
               </a>
@@ -47,7 +47,7 @@
               </a>
               <div class="group w-9 md:w-12 h-9 md:h-12">
                 <a href="javascript:void(0)" class="inline-block w-9 md:w-12 h-9 md:h-12 rounded-full overflow-hidden">
-                  <img src="../assest/images/userProfile.png" class="object-cover" alt="Profile"/>
+                  <img src="../assest/images/userProfile.png" class="object-cover" alt="Profile" />
                 </a>
                 <div class="profie_details">
                   <a href="javascript:void(0)" class="font-primary block">Account Information</a>
@@ -55,8 +55,8 @@
                   <a href="javascript:void(0)" class="font-primary block">Logout</a>
                 </div>
               </div>
-           </div>
-           <div class="selaction_g hidden lg:flex items-center ml-6 space-x-2">
+            </div>
+            <div class="selaction_g hidden lg:flex items-center ml-6 space-x-2">
               <div class="currency">
                 <select name="currency" class="outline-none cursor-pointer font-primary" id="currency">
                   <option value="USD">USD</option>
@@ -71,400 +71,403 @@
                   <option value="USD">Fra</option>
                 </select>
               </div>
-           </div>
-        </div>
-      </div>
-      <div id="navigationBar" class="navigationholder">
-        <nav class="container"> 
-          <div class="navmenu lg:flex items-center justify-between lg:space-x-4 xl:px-5">
-            <div class="navlist py-2 lg:py-4 group relative">
-              <div class="flex items-center">
-                <a href="javascript:void(0)" class="navlink font-primary">All Jewellery </a>
-                <i class="icon-downArrow ml-auto lg:ml-2 xl:ml-3 font-primary text-lg lg:text-xl"></i>
-              </div>
-              <div class="droplist">
-                <div class="drtoptitel">
-                  <span class="block text-xl text-secondary font-bold">Jewellery Collections</span>
-                </div>
-                <div class="droplink -mx-2 flex flex-wrap pt-3 space-y-2 lg:space-y-0">
-                  <div class="w-full lg:w-1/3 px-2 space-y-2">
-                    <a href="javascript:void(0)" class="block">Bangles</a>
-                    <a href="javascript:void(0)" class="block">Bracelets</a>
-                    <a href="javascript:void(0)" class="block">Earrings</a>
-                    <a href="javascript:void(0)" class="block">Gold Chains</a>
-                    <a href="javascript:void(0)" class="block">Kadas</a>
-                  </div>
-                  <div class="w-full lg:w-1/3 px-2 space-y-2">
-                    <a href="javascript:void(0)" class="block">Mangalsutros</a>
-                    <a href="javascript:void(0)" class="block">Necklaces</a>
-                    <a href="javascript:void(0)" class="block">Nose Pins</a>
-                    <a href="javascript:void(0)" class="block">Nose Rings</a>
-                    <a href="javascript:void(0)" class="block">Nose Screws</a>
-                  </div>
-                  <div class="w-full lg:w-1/3 px-2 space-y-2">
-                    <a href="javascript:void(0)" class="block">Mangalsutros</a>
-                    <a href="javascript:void(0)" class="block">Necklaces</a>
-                    <a href="javascript:void(0)" class="block">Nose Pins</a>
-                    <a href="javascript:void(0)" class="block">Nose Rings</a>
-                    <a href="javascript:void(0)" class="block">Nose Screws</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="navlist py-2 lg:py-4 group relative">
-              <div class="flex items-center">
-                <a href="javascript:void(0)" class="navlink font-primary flex items-center">Earrings </a>
-                <i class="icon-downArrow ml-auto lg:ml-2 xl:ml-3 font-primary text-lg lg:text-xl"></i>
-              </div>
-              <div class="droplist">
-                <div class="drtoptitel">
-                  <span class="block text-xl text-secondary font-bold">Earrings Collections</span>
-                </div>
-                <div class="droplink -mx-2 flex flex-wrap pt-3 space-y-2 lg:space-y-0">
-                  <div class="w-full lg:w-1/2 px-2 space-y-2">
-                    <a href="javascript:void(0)" class="block">Studs</a>
-                    <a href="javascript:void(0)" class="block">Jhumkas</a>
-                    <a href="javascript:void(0)" class="block">Earcuffs</a>
-                    <a href="javascript:void(0)" class="block">Pearl Earrings</a>
-                    <a href="javascript:void(0)" class="block">Chandbali Earrings</a>
-                  </div>
-                  <div class="w-full lg:w-1/2 px-2 space-y-2">
-                    <a href="javascript:void(0)" class="block">Drops</a>
-                    <a href="javascript:void(0)" class="block">Hoops and Huggies</a>
-                    <a href="javascript:void(0)" class="block">Suidhaga</a>
-                    <a href="javascript:void(0)" class="block">Gold Earrings</a>
-                    <a href="javascript:void(0)" class="block">Silver Earrings</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="navlist py-2 lg:py-4 group relative">
-              <div class="flex items-center">
-                <a href="javascript:void(0)" class="navlink font-primary flex items-center">Best Sellers </a>
-                <i class="icon-downArrow ml-auto lg:ml-2 xl:ml-3 font-primary text-lg lg:text-xl"></i>
-              </div>
-              <div class="droplist">
-                <div class="drtoptitel">
-                  <span class="block text-xl text-secondary font-bold">Rings Collections</span>
-                </div>
-                <div class="droplink -mx-2 flex flex-wrap pt-3 space-y-2 lg:space-y-0">
-                  <div class="w-full lg:w-1/2 px-2 space-y-2">
-                    <a href="javascript:void(0)" class="block">Engagement</a>
-                    <a href="javascript:void(0)" class="block">Couple Rings</a>
-                    <a href="javascript:void(0)" class="block">Casual</a>
-                    <a href="javascript:void(0)" class="block">Adjustable Rings</a>
-                    <a href="javascript:void(0)" class="block">Silver Rings</a>
-                  </div>
-                  <div class="w-full lg:w-1/2 px-2 space-y-2">
-                    <a href="javascript:void(0)" class="block">Platinum Rings</a>
-                    <a href="javascript:void(0)" class="block">Cocktail</a>
-                    <a href="javascript:void(0)" class="block">Bands</a>
-                    <a href="javascript:void(0)" class="block">Promise Rings</a>
-                    <a href="javascript:void(0)" class="block">Silver Statement Rings</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="navlist py-2 lg:py-4 group relative">
-              <div class="flex items-center">
-                <a href="javascript:void(0)" class="navlink font-primary flex items-center">Rings </a>
-                <i class="icon-downArrow ml-auto lg:ml-2 xl:ml-3 font-primary text-lg lg:text-xl"></i>
-              </div>
-              <div class="droplist">
-                <div class="drtoptitel">
-                  <span class="block text-xl text-secondary font-bold">Sliver</span>
-                </div>
-                <div class="droplink -mx-2 flex flex-wrap pt-3 space-y-2 lg:space-y-0">
-                  <div class="w-full lg:w-1/3 px-2 space-y-2">
-                    <a href="javascript:void(0)" class="block">Bangles</a>
-                    <a href="javascript:void(0)" class="block">Bracelets</a>
-                    <a href="javascript:void(0)" class="block">Earrings</a>
-                    <a href="javascript:void(0)" class="block">Gold Chains</a>
-                    <a href="javascript:void(0)" class="block">Kadas</a>
-                  </div>
-                  <div class="w-full lg:w-1/3 px-2 space-y-2">
-                    <a href="javascript:void(0)" class="block">Mangalsutros</a>
-                    <a href="javascript:void(0)" class="block">Necklaces</a>
-                    <a href="javascript:void(0)" class="block">Nose Pins</a>
-                    <a href="javascript:void(0)" class="block">Nose Rings</a>
-                    <a href="javascript:void(0)" class="block">Nose Screws</a>
-                  </div>
-                  <div class="w-full lg:w-1/3 px-2 space-y-2">
-                    <a href="javascript:void(0)" class="block">Mangalsutros</a>
-                    <a href="javascript:void(0)" class="block">Necklaces</a>
-                    <a href="javascript:void(0)" class="block">Nose Pins</a>
-                    <a href="javascript:void(0)" class="block">Nose Rings</a>
-                    <a href="javascript:void(0)" class="block">Nose Screws</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="navlist py-2 lg:py-4 group relative">
-              <div class="flex items-center">
-                <a href="javascript:void(0)" class="navlink font-primary flex items-center">Collections </a>
-                <i class="icon-downArrow ml-auto lg:ml-2 xl:ml-3 font-primary text-lg lg:text-xl"></i>
-              </div>
-              <div class="droplist">
-                <div class="drtoptitel">
-                  <span class="block text-xl text-secondary font-bold">Gifts</span>
-                </div>
-                <div class="droplink -mx-2 flex flex-wrap pt-3 space-y-2 lg:space-y-0">
-                  <div class="w-full lg:w-1/2 px-2 space-y-2">
-                    <a href="javascript:void(0)" class="block">Gifts for Friends</a>
-                    <a href="javascript:void(0)" class="block">Bracelets</a>
-                    <a href="javascript:void(0)" class="block">Earrings</a>
-                    <a href="javascript:void(0)" class="block">Gold Chains</a>
-                    <a href="javascript:void(0)" class="block">Kadas</a>
-                  </div>
-                  <div class="w-full lg:w-1/2 px-2 space-y-2">
-                    <a href="javascript:void(0)" class="block">Graduation Gifts</a>
-                    <a href="javascript:void(0)" class="block">Birthday Gifts</a>
-                    <a href="javascript:void(0)" class="block">Business Gifts</a>
-                    <a href="javascript:void(0)" class="block">Nose Rings</a>
-                    <a href="javascript:void(0)" class="block">Personalised Gifts</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="navlist py-2 lg:py-4 group relative">
-              <div class="flex items-center">
-                <a href="javascript:void(0)" class="navlink font-primary flex items-center">Ready To Ship </a>
-                <i class="icon-downArrow ml-auto lg:ml-2 xl:ml-3 font-primary text-lg lg:text-xl"></i>
-              </div>
-              <div class="droplist group-hover:right-0 right-0 left-auto">
-                <div class="drtoptitel">
-                  <span class="block text-xl text-secondary font-bold">Sliver</span>
-                </div>
-                <div class="droplink -mx-2 flex flex-wrap pt-3 space-y-2 lg:space-y-0">
-                  <div class="w-full lg:w-1/3 px-2 space-y-2">
-                    <a href="javascript:void(0)" class="block">Bangles</a>
-                    <a href="javascript:void(0)" class="block">Bracelets</a>
-                    <a href="javascript:void(0)" class="block">Earrings</a>
-                    <a href="javascript:void(0)" class="block">Gold Chains</a>
-                    <a href="javascript:void(0)" class="block">Kadas</a>
-                  </div>
-                  <div class="w-full lg:w-1/3 px-2 space-y-2">
-                    <a href="javascript:void(0)" class="block">Mangalsutros</a>
-                    <a href="javascript:void(0)" class="block">Necklaces</a>
-                    <a href="javascript:void(0)" class="block">Nose Pins</a>
-                    <a href="javascript:void(0)" class="block">Nose Rings</a>
-                    <a href="javascript:void(0)" class="block">Nose Screws</a>
-                  </div>
-                  <div class="w-full lg:w-1/3 px-2 space-y-2">
-                    <a href="javascript:void(0)" class="block">Mangalsutros</a>
-                    <a href="javascript:void(0)" class="block">Necklaces</a>
-                    <a href="javascript:void(0)" class="block">Nose Pins</a>
-                    <a href="javascript:void(0)" class="block">Nose Rings</a>
-                    <a href="javascript:void(0)" class="block">Nose Screws</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="navlist py-2 lg:py-4 group relative">
-              <div class="flex items-center">
-                <a href="javascript:void(0)" class="navlink font-primary flex items-center">Gold Chains </a>
-                <i class="icon-downArrow ml-auto lg:ml-2 xl:ml-3 font-primary text-lg lg:text-xl"></i>
-              </div>
-              <div class="droplist group-hover:right-0 right-0 left-auto">
-                <div class="drtoptitel">
-                  <span class="block text-xl text-secondary font-bold">Gifts</span>
-                </div>
-                <div class="droplink -mx-2 flex flex-wrap pt-3 space-y-2 lg:space-y-0">
-                  <div class="w-full lg:w-1/2 px-2 space-y-2">
-                    <a href="javascript:void(0)" class="block">Gifts for Friends</a>
-                    <a href="javascript:void(0)" class="block">Bracelets</a>
-                    <a href="javascript:void(0)" class="block">Earrings</a>
-                    <a href="javascript:void(0)" class="block">Gold Chains</a>
-                    <a href="javascript:void(0)" class="block">Kadas</a>
-                  </div>
-                  <div class="w-full lg:w-1/2 px-2 space-y-2">
-                    <a href="javascript:void(0)" class="block">Graduation Gifts</a>
-                    <a href="javascript:void(0)" class="block">Birthday Gifts</a>
-                    <a href="javascript:void(0)" class="block">Business Gifts</a>
-                    <a href="javascript:void(0)" class="block">Nose Rings</a>
-                    <a href="javascript:void(0)" class="block">Personalised Gifts</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="navlist py-2 lg:py-4 group relative">
-              <div class="flex items-center">
-                <a href="javascript:void(0)" class="navlink font-primary flex items-center">Sliver </a>
-                <i class="icon-downArrow ml-auto lg:ml-2 xl:ml-3 font-primary text-lg lg:text-xl"></i>
-              </div>
-              <div class="droplist group-hover:right-0 right-0 left-auto">
-                <div class="drtoptitel">
-                  <span class="block text-xl text-secondary font-bold">Sliver</span>
-                </div>
-                <div class="droplink -mx-2 flex flex-wrap pt-3 space-y-2 lg:space-y-0">
-                  <div class="w-full lg:w-1/3 px-2 space-y-2">
-                    <a href="javascript:void(0)" class="block">Bangles</a>
-                    <a href="javascript:void(0)" class="block">Bracelets</a>
-                    <a href="javascript:void(0)" class="block">Earrings</a>
-                    <a href="javascript:void(0)" class="block">Gold Chains</a>
-                    <a href="javascript:void(0)" class="block">Kadas</a>
-                  </div>
-                  <div class="w-full lg:w-1/3 px-2 space-y-2">
-                    <a href="javascript:void(0)" class="block">Mangalsutros</a>
-                    <a href="javascript:void(0)" class="block">Necklaces</a>
-                    <a href="javascript:void(0)" class="block">Nose Pins</a>
-                    <a href="javascript:void(0)" class="block">Nose Rings</a>
-                    <a href="javascript:void(0)" class="block">Nose Screws</a>
-                  </div>
-                  <div class="w-full lg:w-1/3 px-2 space-y-2">
-                    <a href="javascript:void(0)" class="block">Mangalsutros</a>
-                    <a href="javascript:void(0)" class="block">Necklaces</a>
-                    <a href="javascript:void(0)" class="block">Nose Pins</a>
-                    <a href="javascript:void(0)" class="block">Nose Rings</a>
-                    <a href="javascript:void(0)" class="block">Nose Screws</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="navlist py-2 lg:py-4 group relative">
-              <div class="flex items-center">
-                <a href="javascript:void(0)" class="navlink font-primary flex items-center">Gifting </a>
-                <i class="icon-downArrow ml-auto lg:ml-2 xl:ml-3 font-primary text-lg lg:text-xl"></i>
-              </div>
-              <div class="droplist group-hover:right-0 right-0 left-auto">
-                <div class="drtoptitel">
-                  <span class="block text-xl text-secondary font-bold">Gifts</span>
-                </div>
-                <div class="droplink -mx-2 flex flex-wrap pt-3 space-y-2 lg:space-y-0">
-                  <div class="w-full lg:w-1/2 px-2 space-y-2">
-                    <a href="javascript:void(0)" class="block">Gifts for Friends</a>
-                    <a href="javascript:void(0)" class="block">Bracelets</a>
-                    <a href="javascript:void(0)" class="block">Earrings</a>
-                    <a href="javascript:void(0)" class="block">Gold Chains</a>
-                    <a href="javascript:void(0)" class="block">Kadas</a>
-                  </div>
-                  <div class="w-full lg:w-1/2 px-2 space-y-2">
-                    <a href="javascript:void(0)" class="block">Graduation Gifts</a>
-                    <a href="javascript:void(0)" class="block">Birthday Gifts</a>
-                    <a href="javascript:void(0)" class="block">Business Gifts</a>
-                    <a href="javascript:void(0)" class="block">Nose Rings</a>
-                    <a href="javascript:void(0)" class="block">Personalised Gifts</a>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
-        </nav>
-      </div>
-    </header>
-    <!-- card  -->
-    <div class="w-full relative py-8 md:py-10 xl:py-12">
-      <div class="container">      
-        <!-- titel  -->
-        <div class="space-y-3 mb-6 lg:mb-8">
-          <h2 class="font-bold text-black_mirage">Shopping Cart</h2>
-          <span class="block text-primary font-semibold md:font-normal text-base lg:text-lg"><b>(2 Items)</b> in your shopping cart</span>
         </div>
-        <!-- order details  -->
-        <div class="flex flex-wrap -mx-3">
-          <!-- order product list  -->
-          <div class="w-full lg:w-8/12 p-3">
-            <div class="w-full lg:border-r lg:border-gray_slate space-y-5">
-              <div class="max-w-full lg:max-w-3xl lg:pr-6 space-y-4">
-                <div class="w-full rounded-xl p-4 border border-gray_slate/50 flex flex-wrap">
-                  <div class="w-28 h-28 mx-auto mb-2">
-                    <div class="w-full h-full bg-gray_slate/20 rounded-xl">
-                      <img src="../assest/images/review_product.png" class="w-full" alt="review_product"/>
+        <div id="navigationBar" class="navigationholder">
+          <nav class="container">
+            <div class="navmenu lg:flex items-center justify-between lg:space-x-4 xl:px-5">
+              <div class="navlist py-2 lg:py-4 group relative">
+                <div class="flex items-center">
+                  <a href="javascript:void(0)" class="navlink font-primary">All Jewellery </a>
+                  <i class="icon-downArrow ml-auto lg:ml-2 xl:ml-3 font-primary text-lg lg:text-xl"></i>
+                </div>
+                <div class="droplist">
+                  <div class="drtoptitel">
+                    <span class="block text-xl text-secondary font-bold">Jewellery Collections</span>
+                  </div>
+                  <div class="droplink -mx-2 flex flex-wrap pt-3 space-y-2 lg:space-y-0">
+                    <div class="w-full lg:w-1/3 px-2 space-y-2">
+                      <a href="javascript:void(0)" class="block">Bangles</a>
+                      <a href="javascript:void(0)" class="block">Bracelets</a>
+                      <a href="javascript:void(0)" class="block">Earrings</a>
+                      <a href="javascript:void(0)" class="block">Gold Chains</a>
+                      <a href="javascript:void(0)" class="block">Kadas</a>
+                    </div>
+                    <div class="w-full lg:w-1/3 px-2 space-y-2">
+                      <a href="javascript:void(0)" class="block">Mangalsutros</a>
+                      <a href="javascript:void(0)" class="block">Necklaces</a>
+                      <a href="javascript:void(0)" class="block">Nose Pins</a>
+                      <a href="javascript:void(0)" class="block">Nose Rings</a>
+                      <a href="javascript:void(0)" class="block">Nose Screws</a>
+                    </div>
+                    <div class="w-full lg:w-1/3 px-2 space-y-2">
+                      <a href="javascript:void(0)" class="block">Mangalsutros</a>
+                      <a href="javascript:void(0)" class="block">Necklaces</a>
+                      <a href="javascript:void(0)" class="block">Nose Pins</a>
+                      <a href="javascript:void(0)" class="block">Nose Rings</a>
+                      <a href="javascript:void(0)" class="block">Nose Screws</a>
                     </div>
                   </div>
-                  <div class="w-full sm:w-[calc(100%-112px)] sm:pl-6">
-                    <div class="flex items-center">
-                      <span class="font-primary text-secondary text-base pr-3">Floral rose gold finger ring</span>
-                      <a href="javascript:void(0)" class="icon-delete ml-auto text-2xl text-[#D21A0E]"></a>
+                </div>
+              </div>
+              <div class="navlist py-2 lg:py-4 group relative">
+                <div class="flex items-center">
+                  <a href="javascript:void(0)" class="navlink font-primary flex items-center">Earrings </a>
+                  <i class="icon-downArrow ml-auto lg:ml-2 xl:ml-3 font-primary text-lg lg:text-xl"></i>
+                </div>
+                <div class="droplist">
+                  <div class="drtoptitel">
+                    <span class="block text-xl text-secondary font-bold">Earrings Collections</span>
+                  </div>
+                  <div class="droplink -mx-2 flex flex-wrap pt-3 space-y-2 lg:space-y-0">
+                    <div class="w-full lg:w-1/2 px-2 space-y-2">
+                      <a href="javascript:void(0)" class="block">Studs</a>
+                      <a href="javascript:void(0)" class="block">Jhumkas</a>
+                      <a href="javascript:void(0)" class="block">Earcuffs</a>
+                      <a href="javascript:void(0)" class="block">Pearl Earrings</a>
+                      <a href="javascript:void(0)" class="block">Chandbali Earrings</a>
                     </div>
-                    <p class="text-xs text-gray_slate max-w-md font-medium">Add the gentle charm of flowers to your look with this finger ring crafted in 18 Karat Rose Gold with diamonds. Stone Clarity SI2</p>
-                    <div class="flex items-center">
-                      <div class="flex items-center">
-                        <span class="font-primary text-secondary">₹ 24 814.00</span>
-                        <span class="font-primary text-secondary text-sm pl-4">Qty : 1</span>
+                    <div class="w-full lg:w-1/2 px-2 space-y-2">
+                      <a href="javascript:void(0)" class="block">Drops</a>
+                      <a href="javascript:void(0)" class="block">Hoops and Huggies</a>
+                      <a href="javascript:void(0)" class="block">Suidhaga</a>
+                      <a href="javascript:void(0)" class="block">Gold Earrings</a>
+                      <a href="javascript:void(0)" class="block">Silver Earrings</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="navlist py-2 lg:py-4 group relative">
+                <div class="flex items-center">
+                  <a href="javascript:void(0)" class="navlink font-primary flex items-center">Best Sellers </a>
+                  <i class="icon-downArrow ml-auto lg:ml-2 xl:ml-3 font-primary text-lg lg:text-xl"></i>
+                </div>
+                <div class="droplist">
+                  <div class="drtoptitel">
+                    <span class="block text-xl text-secondary font-bold">Rings Collections</span>
+                  </div>
+                  <div class="droplink -mx-2 flex flex-wrap pt-3 space-y-2 lg:space-y-0">
+                    <div class="w-full lg:w-1/2 px-2 space-y-2">
+                      <a href="javascript:void(0)" class="block">Engagement</a>
+                      <a href="javascript:void(0)" class="block">Couple Rings</a>
+                      <a href="javascript:void(0)" class="block">Casual</a>
+                      <a href="javascript:void(0)" class="block">Adjustable Rings</a>
+                      <a href="javascript:void(0)" class="block">Silver Rings</a>
+                    </div>
+                    <div class="w-full lg:w-1/2 px-2 space-y-2">
+                      <a href="javascript:void(0)" class="block">Platinum Rings</a>
+                      <a href="javascript:void(0)" class="block">Cocktail</a>
+                      <a href="javascript:void(0)" class="block">Bands</a>
+                      <a href="javascript:void(0)" class="block">Promise Rings</a>
+                      <a href="javascript:void(0)" class="block">Silver Statement Rings</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="navlist py-2 lg:py-4 group relative">
+                <div class="flex items-center">
+                  <a href="javascript:void(0)" class="navlink font-primary flex items-center">Rings </a>
+                  <i class="icon-downArrow ml-auto lg:ml-2 xl:ml-3 font-primary text-lg lg:text-xl"></i>
+                </div>
+                <div class="droplist">
+                  <div class="drtoptitel">
+                    <span class="block text-xl text-secondary font-bold">Sliver</span>
+                  </div>
+                  <div class="droplink -mx-2 flex flex-wrap pt-3 space-y-2 lg:space-y-0">
+                    <div class="w-full lg:w-1/3 px-2 space-y-2">
+                      <a href="javascript:void(0)" class="block">Bangles</a>
+                      <a href="javascript:void(0)" class="block">Bracelets</a>
+                      <a href="javascript:void(0)" class="block">Earrings</a>
+                      <a href="javascript:void(0)" class="block">Gold Chains</a>
+                      <a href="javascript:void(0)" class="block">Kadas</a>
+                    </div>
+                    <div class="w-full lg:w-1/3 px-2 space-y-2">
+                      <a href="javascript:void(0)" class="block">Mangalsutros</a>
+                      <a href="javascript:void(0)" class="block">Necklaces</a>
+                      <a href="javascript:void(0)" class="block">Nose Pins</a>
+                      <a href="javascript:void(0)" class="block">Nose Rings</a>
+                      <a href="javascript:void(0)" class="block">Nose Screws</a>
+                    </div>
+                    <div class="w-full lg:w-1/3 px-2 space-y-2">
+                      <a href="javascript:void(0)" class="block">Mangalsutros</a>
+                      <a href="javascript:void(0)" class="block">Necklaces</a>
+                      <a href="javascript:void(0)" class="block">Nose Pins</a>
+                      <a href="javascript:void(0)" class="block">Nose Rings</a>
+                      <a href="javascript:void(0)" class="block">Nose Screws</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="navlist py-2 lg:py-4 group relative">
+                <div class="flex items-center">
+                  <a href="javascript:void(0)" class="navlink font-primary flex items-center">Collections </a>
+                  <i class="icon-downArrow ml-auto lg:ml-2 xl:ml-3 font-primary text-lg lg:text-xl"></i>
+                </div>
+                <div class="droplist">
+                  <div class="drtoptitel">
+                    <span class="block text-xl text-secondary font-bold">Gifts</span>
+                  </div>
+                  <div class="droplink -mx-2 flex flex-wrap pt-3 space-y-2 lg:space-y-0">
+                    <div class="w-full lg:w-1/2 px-2 space-y-2">
+                      <a href="javascript:void(0)" class="block">Gifts for Friends</a>
+                      <a href="javascript:void(0)" class="block">Bracelets</a>
+                      <a href="javascript:void(0)" class="block">Earrings</a>
+                      <a href="javascript:void(0)" class="block">Gold Chains</a>
+                      <a href="javascript:void(0)" class="block">Kadas</a>
+                    </div>
+                    <div class="w-full lg:w-1/2 px-2 space-y-2">
+                      <a href="javascript:void(0)" class="block">Graduation Gifts</a>
+                      <a href="javascript:void(0)" class="block">Birthday Gifts</a>
+                      <a href="javascript:void(0)" class="block">Business Gifts</a>
+                      <a href="javascript:void(0)" class="block">Nose Rings</a>
+                      <a href="javascript:void(0)" class="block">Personalised Gifts</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="navlist py-2 lg:py-4 group relative">
+                <div class="flex items-center">
+                  <a href="javascript:void(0)" class="navlink font-primary flex items-center">Ready To Ship </a>
+                  <i class="icon-downArrow ml-auto lg:ml-2 xl:ml-3 font-primary text-lg lg:text-xl"></i>
+                </div>
+                <div class="droplist group-hover:right-0 right-0 left-auto">
+                  <div class="drtoptitel">
+                    <span class="block text-xl text-secondary font-bold">Sliver</span>
+                  </div>
+                  <div class="droplink -mx-2 flex flex-wrap pt-3 space-y-2 lg:space-y-0">
+                    <div class="w-full lg:w-1/3 px-2 space-y-2">
+                      <a href="javascript:void(0)" class="block">Bangles</a>
+                      <a href="javascript:void(0)" class="block">Bracelets</a>
+                      <a href="javascript:void(0)" class="block">Earrings</a>
+                      <a href="javascript:void(0)" class="block">Gold Chains</a>
+                      <a href="javascript:void(0)" class="block">Kadas</a>
+                    </div>
+                    <div class="w-full lg:w-1/3 px-2 space-y-2">
+                      <a href="javascript:void(0)" class="block">Mangalsutros</a>
+                      <a href="javascript:void(0)" class="block">Necklaces</a>
+                      <a href="javascript:void(0)" class="block">Nose Pins</a>
+                      <a href="javascript:void(0)" class="block">Nose Rings</a>
+                      <a href="javascript:void(0)" class="block">Nose Screws</a>
+                    </div>
+                    <div class="w-full lg:w-1/3 px-2 space-y-2">
+                      <a href="javascript:void(0)" class="block">Mangalsutros</a>
+                      <a href="javascript:void(0)" class="block">Necklaces</a>
+                      <a href="javascript:void(0)" class="block">Nose Pins</a>
+                      <a href="javascript:void(0)" class="block">Nose Rings</a>
+                      <a href="javascript:void(0)" class="block">Nose Screws</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="navlist py-2 lg:py-4 group relative">
+                <div class="flex items-center">
+                  <a href="javascript:void(0)" class="navlink font-primary flex items-center">Gold Chains </a>
+                  <i class="icon-downArrow ml-auto lg:ml-2 xl:ml-3 font-primary text-lg lg:text-xl"></i>
+                </div>
+                <div class="droplist group-hover:right-0 right-0 left-auto">
+                  <div class="drtoptitel">
+                    <span class="block text-xl text-secondary font-bold">Gifts</span>
+                  </div>
+                  <div class="droplink -mx-2 flex flex-wrap pt-3 space-y-2 lg:space-y-0">
+                    <div class="w-full lg:w-1/2 px-2 space-y-2">
+                      <a href="javascript:void(0)" class="block">Gifts for Friends</a>
+                      <a href="javascript:void(0)" class="block">Bracelets</a>
+                      <a href="javascript:void(0)" class="block">Earrings</a>
+                      <a href="javascript:void(0)" class="block">Gold Chains</a>
+                      <a href="javascript:void(0)" class="block">Kadas</a>
+                    </div>
+                    <div class="w-full lg:w-1/2 px-2 space-y-2">
+                      <a href="javascript:void(0)" class="block">Graduation Gifts</a>
+                      <a href="javascript:void(0)" class="block">Birthday Gifts</a>
+                      <a href="javascript:void(0)" class="block">Business Gifts</a>
+                      <a href="javascript:void(0)" class="block">Nose Rings</a>
+                      <a href="javascript:void(0)" class="block">Personalised Gifts</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="navlist py-2 lg:py-4 group relative">
+                <div class="flex items-center">
+                  <a href="javascript:void(0)" class="navlink font-primary flex items-center">Sliver </a>
+                  <i class="icon-downArrow ml-auto lg:ml-2 xl:ml-3 font-primary text-lg lg:text-xl"></i>
+                </div>
+                <div class="droplist group-hover:right-0 right-0 left-auto">
+                  <div class="drtoptitel">
+                    <span class="block text-xl text-secondary font-bold">Sliver</span>
+                  </div>
+                  <div class="droplink -mx-2 flex flex-wrap pt-3 space-y-2 lg:space-y-0">
+                    <div class="w-full lg:w-1/3 px-2 space-y-2">
+                      <a href="javascript:void(0)" class="block">Bangles</a>
+                      <a href="javascript:void(0)" class="block">Bracelets</a>
+                      <a href="javascript:void(0)" class="block">Earrings</a>
+                      <a href="javascript:void(0)" class="block">Gold Chains</a>
+                      <a href="javascript:void(0)" class="block">Kadas</a>
+                    </div>
+                    <div class="w-full lg:w-1/3 px-2 space-y-2">
+                      <a href="javascript:void(0)" class="block">Mangalsutros</a>
+                      <a href="javascript:void(0)" class="block">Necklaces</a>
+                      <a href="javascript:void(0)" class="block">Nose Pins</a>
+                      <a href="javascript:void(0)" class="block">Nose Rings</a>
+                      <a href="javascript:void(0)" class="block">Nose Screws</a>
+                    </div>
+                    <div class="w-full lg:w-1/3 px-2 space-y-2">
+                      <a href="javascript:void(0)" class="block">Mangalsutros</a>
+                      <a href="javascript:void(0)" class="block">Necklaces</a>
+                      <a href="javascript:void(0)" class="block">Nose Pins</a>
+                      <a href="javascript:void(0)" class="block">Nose Rings</a>
+                      <a href="javascript:void(0)" class="block">Nose Screws</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="navlist py-2 lg:py-4 group relative">
+                <div class="flex items-center">
+                  <a href="javascript:void(0)" class="navlink font-primary flex items-center">Gifting </a>
+                  <i class="icon-downArrow ml-auto lg:ml-2 xl:ml-3 font-primary text-lg lg:text-xl"></i>
+                </div>
+                <div class="droplist group-hover:right-0 right-0 left-auto">
+                  <div class="drtoptitel">
+                    <span class="block text-xl text-secondary font-bold">Gifts</span>
+                  </div>
+                  <div class="droplink -mx-2 flex flex-wrap pt-3 space-y-2 lg:space-y-0">
+                    <div class="w-full lg:w-1/2 px-2 space-y-2">
+                      <a href="javascript:void(0)" class="block">Gifts for Friends</a>
+                      <a href="javascript:void(0)" class="block">Bracelets</a>
+                      <a href="javascript:void(0)" class="block">Earrings</a>
+                      <a href="javascript:void(0)" class="block">Gold Chains</a>
+                      <a href="javascript:void(0)" class="block">Kadas</a>
+                    </div>
+                    <div class="w-full lg:w-1/2 px-2 space-y-2">
+                      <a href="javascript:void(0)" class="block">Graduation Gifts</a>
+                      <a href="javascript:void(0)" class="block">Birthday Gifts</a>
+                      <a href="javascript:void(0)" class="block">Business Gifts</a>
+                      <a href="javascript:void(0)" class="block">Nose Rings</a>
+                      <a href="javascript:void(0)" class="block">Personalised Gifts</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!-- card  -->
+      <div class="w-full relative py-8 md:py-10 xl:py-12">
+        <div class="container">
+          <!-- titel  -->
+          <div class="space-y-3 mb-6 lg:mb-8">
+            <h2 class="font-bold text-black_mirage">Shopping Cart</h2>
+            <span class="block text-primary font-semibold md:font-normal text-base lg:text-lg">
+              <b>(2 Items)</b> in your shopping cart </span>
+          </div>
+          <!-- order details  -->
+          <div class="flex flex-wrap -mx-3">
+            <!-- order product list  -->
+            <div class="w-full lg:w-8/12 p-3">
+              <div class="w-full lg:border-r lg:border-gray_slate space-y-5">
+                <div class="max-w-full lg:max-w-3xl lg:pr-6 space-y-4">
+                  <div class="w-full rounded-xl p-4 border border-gray_slate/50 flex flex-wrap">
+                    <div class="w-28 h-28 mx-auto mb-2">
+                      <div class="w-full h-full bg-gray_slate/20 rounded-xl">
+                        <img src="../assest/images/review_product.png" class="w-full" alt="review_product" />
                       </div>
-                      <div class="flex items-center quantity_count ml-auto">
-                        <button type="button">−</button>
+                    </div>
+                    <div class="w-full sm:w-[calc(100%-112px)] sm:pl-6">
+                      <div class="flex items-center">
+                        <span class="font-primary text-secondary text-base pr-3">Floral rose gold finger ring</span>
+                        <a href="javascript:void(0)" class="icon-delete ml-auto text-2xl text-[#D21A0E]"></a>
+                      </div>
+                      <p class="text-xs text-gray_slate max-w-md font-medium">Add the gentle charm of flowers to your look with this finger ring crafted in 18 Karat Rose Gold with diamonds. Stone Clarity SI2</p>
+                      <div class="flex items-center">
+                        <div class="flex items-center">
+                          <span class="font-primary text-secondary">₹ 24 814.00</span>
+                          <span class="font-primary text-secondary text-sm pl-4">Qty : 1</span>
+                        </div>
+                        <div class="flex items-center quantity_count ml-auto">
+                          <button type="button">−</button>
                           <span>
                             <input type="number" id="Quantity" value="1" class="h-10 w-10 border-y-0 text-center outline-none appearance-none">
                           </span>
                           <button type="button">+</button>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="w-full rounded-xl p-4 border border-gray_slate/50 flex flex-wrap">
-                  <div class="w-28 h-28 mx-auto mb-2">
-                    <div class="w-full h-full bg-gray_slate/20 rounded-xl">
-                      <img src="../assest/images/review_product.png" class="w-full" alt="review_product"/>
+                  <div class="w-full rounded-xl p-4 border border-gray_slate/50 flex flex-wrap">
+                    <div class="w-28 h-28 mx-auto mb-2">
+                      <div class="w-full h-full bg-gray_slate/20 rounded-xl">
+                        <img src="../assest/images/review_product.png" class="w-full" alt="review_product" />
+                      </div>
                     </div>
-                  </div>
-                  <div class="w-full sm:w-[calc(100%-112px)] sm:pl-6">
-                    <div class="flex items-center">
-                      <span class="font-primary text-secondary text-base pr-3">Floral rose gold finger ring</span>
-                      <a href="javascript:void(0)" class="icon-delete ml-auto text-2xl text-[#D21A0E]"></a>
-                    </div>
-                    <p class="text-xs text-gray_slate max-w-md font-medium">Add the gentle charm of flowers to your look with this finger ring crafted in 18 Karat Rose Gold with diamonds. Stone Clarity SI2</p>
-                    <div class="flex items-center">
+                    <div class="w-full sm:w-[calc(100%-112px)] sm:pl-6">
                       <div class="flex items-center">
-                        <span class="font-primary text-secondary">₹ 24 814.00</span>
-                        <span class="font-primary text-secondary text-sm pl-4">Qty : 1</span>
+                        <span class="font-primary text-secondary text-base pr-3">Floral rose gold finger ring</span>
+                        <a href="javascript:void(0)" class="icon-delete ml-auto text-2xl text-[#D21A0E]"></a>
                       </div>
-                      <div class="flex items-center quantity_count ml-auto">
-                        <button type="button">−</button>
+                      <p class="text-xs text-gray_slate max-w-md font-medium">Add the gentle charm of flowers to your look with this finger ring crafted in 18 Karat Rose Gold with diamonds. Stone Clarity SI2</p>
+                      <div class="flex items-center">
+                        <div class="flex items-center">
+                          <span class="font-primary text-secondary">₹ 24 814.00</span>
+                          <span class="font-primary text-secondary text-sm pl-4">Qty : 1</span>
+                        </div>
+                        <div class="flex items-center quantity_count ml-auto">
+                          <button type="button">−</button>
                           <span>
                             <input type="number" id="Quantity" value="1" class="h-10 w-10 border-y-0 text-center outline-none appearance-none">
                           </span>
                           <button type="button">+</button>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <!-- order total  -->
-          <div class="w-full lg:w-4/12 mt-6 lg:mt-0 p-3">
-            <div class="w-full">
-              <div class="w-full lg:max-w-xs mx-auto sm:mr-0 sm:ml-auto">
-                <h4 class="block font-bold mb-3 sm:mb-6 lg:mb-10">Your Order</h4>
-                <!-- product cost  -->
-                <div class="w-full pb-2 space-y-2">
-                  <div class="w-full flex items-center justify-between">
-                    <span class="text-sm text-gray_slate font-bold pr-3">Floral rose gold finger ring x 1</span>
-                    <span class="text-sm text-gray_slate font-bold">₹ 4814.00</span>
+            <!-- order total  -->
+            <div class="w-full lg:w-4/12 mt-6 lg:mt-0 p-3">
+              <div class="w-full">
+                <div class="w-full lg:max-w-xs mx-auto sm:mr-0 sm:ml-auto">
+                  <h4 class="block font-bold mb-3 sm:mb-6 lg:mb-10">Your Order</h4>
+                  <!-- product cost  -->
+                  <div class="w-full pb-2 space-y-2">
+                    <div class="w-full flex items-center justify-between">
+                      <span class="text-sm text-gray_slate font-bold pr-3">Floral rose gold finger ring x 1</span>
+                      <span class="text-sm text-gray_slate font-bold">₹ 4814.00</span>
+                    </div>
+                    <div class="w-full flex items-center justify-between">
+                      <span class="text-sm text-gray_slate font-bold pr-3">Floral rose gold finger ring x 2</span>
+                      <span class="text-sm text-gray_slate font-bold">₹ 2814.00</span>
+                    </div>
                   </div>
-                  <div class="w-full flex items-center justify-between">
-                    <span class="text-sm text-gray_slate font-bold pr-3">Floral rose gold finger ring x 2</span>
-                    <span class="text-sm text-gray_slate font-bold">₹ 2814.00</span>
+                  <!-- Sub Total -->
+                  <div class="w-full py-2 border-t border-gray_slate/50 space-y-2">
+                    <div class="w-full flex items-center justify-between">
+                      <span class="text-sm text-gray_slate font-bold pr-3">Sub Total</span>
+                      <span class="text-sm text-gray_slate font-bold">₹ 7228.00</span>
+                    </div>
+                    <div class="w-full flex items-center justify-between">
+                      <span class="text-sm text-gray_slate font-bold pr-3">Shipping Charge</span>
+                      <span class="text-sm text-gray_slate font-bold">₹ 228.00</span>
+                    </div>
                   </div>
-                </div>
-                <!-- Sub Total -->
-                <div class="w-full py-2 border-t border-gray_slate/50 space-y-2">
-                  <div class="w-full flex items-center justify-between">
-                    <span class="text-sm text-gray_slate font-bold pr-3">Sub Total</span>
-                    <span class="text-sm text-gray_slate font-bold">₹ 7228.00</span>
+                  <!-- total  -->
+                  <div class="w-full flex items-center justify-between py-2 border-t border-gray_slate/50">
+                    <span class="font-primary text-black_mirage pr-3">Total</span>
+                    <span class="text-lg xl:text-xl text-black_mirage font-bold">₹ 7228.00</span>
                   </div>
-                  <div class="w-full flex items-center justify-between">
-                    <span class="text-sm text-gray_slate font-bold pr-3">Shipping Charge</span>
-                    <span class="text-sm text-gray_slate font-bold">₹ 228.00</span>
-                  </div>
-                </div>
-                <!-- total  -->
-                <div class="w-full flex items-center justify-between py-2 border-t border-gray_slate/50">
-                  <span class="font-primary text-black_mirage pr-3">Total</span>
-                  <span class="text-lg xl:text-xl text-black_mirage font-bold">₹ 7228.00</span>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <!-- order continue button  -->
-        <div class="flex flex-wrap mt-8 md:mt-16 lg:mt-24">
-          <a href="billing_address.html" type="button" class="card-btn-primary ordernxtprw_btn ml-auto mr-0 order-1 sm:order-2">Continue</a>
+          <!-- order continue button  -->
+          <div class="flex flex-wrap mt-8 md:mt-16 lg:mt-24">
+            <a href="billing_address.html" type="button" class="card-btn-primary ordernxtprw_btn ml-auto mr-0 order-1 sm:order-2">Continue</a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</body>
+
+    <script src="../assest/js/script.js"></script>
+  </body>
 </html>

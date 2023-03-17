@@ -25,6 +25,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-order_confirmed:before {
+  content: "\e904";
+}
+.icon-out_deliver:before {
+  content: "\e93a";
+}
 .icon-right:before {
   content: "\e931";
 }
@@ -45,65 +51,6 @@
 }
 .icon-deliver:before {
   content: "\e903";
-}
-.icon-outdeliver .path1:before {
-  content: "\e904";
-  color: rgb(0, 0, 0);
-}
-.icon-outdeliver .path2:before {
-  content: "\e905";
-  margin-left: -1em;
-  color: rgb(0, 0, 0);
-}
-.icon-outdeliver .path3:before {
-  content: "\e906";
-  margin-left: -1em;
-  color: rgb(0, 0, 0);
-}
-.icon-outdeliver .path4:before {
-  content: "\e907";
-  margin-left: -1em;
-  color: rgb(254, 217, 168);
-}
-.icon-outdeliver .path5:before {
-  content: "\e908";
-  margin-left: -1em;
-  color: rgb(255, 255, 255);
-}
-.icon-outdeliver .path6:before {
-  content: "\e909";
-  margin-left: -1em;
-  color: rgb(255, 255, 255);
-}
-.icon-outdeliver .path7:before {
-  content: "\e90a";
-  margin-left: -1em;
-  color: rgb(255, 255, 255);
-}
-.icon-outdeliver .path8:before {
-  content: "\e90b";
-  margin-left: -1em;
-  color: rgb(255, 255, 255);
-}
-.icon-outdeliver .path9:before {
-  content: "\e90c";
-  margin-left: -1em;
-  color: rgb(255, 255, 255);
-}
-.icon-outdeliver .path10:before {
-  content: "\e90d";
-  margin-left: -1em;
-  color: rgb(255, 255, 255);
-}
-.icon-outdeliver .path11:before {
-  content: "\e90e";
-  margin-left: -1em;
-  color: rgb(254, 217, 168);
-}
-.icon-outdeliver .path12:before {
-  content: "\e90f";
-  margin-left: -1em;
-  color: rgb(0, 0, 0);
 }
 .icon-shipped:before {
   content: "\e910";

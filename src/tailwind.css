@@ -89,6 +89,12 @@ h4{@apply text-22 lg:text-2xl xl:text-28;}
 .paydelivery input:checked + .radiobox{@apply border-primary;}
 .paydelivery input:checked ~ div .paytitel{@apply text-primary;}
 
-
-
+/* Track order  */
+.delivery_process {@apply relative flex items-center space-x-3 py-3 sm:py-0 sm:space-x-0 sm:block;}
+.delivery_process .del_process_box{@apply flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-light_gray mx-auto relative z-10;}
+.delivery_process .processline{@apply absolute h-full w-0.5 sm:h-auto sm:w-full border-l-2 sm:border-l-0 sm:border-b-2 border-dashed left-6 sm:left-auto sm:right-1/2 top-1/2 -translate-y-full sm:-translate-y-1/2;}
+.delivery_process .delivery_process_titel{@apply block text-center font-primary text-primary text-sm md:text-base lg:text-lg sm:mt-2;}
+.delivery_process.active .del_process_box{@apply bg-primary;}
+.delivery_process.active .del_process_box span{@apply text-white;}
+.delivery_process.active .processline{@apply border-primary;}
 @tailwind utilities;
